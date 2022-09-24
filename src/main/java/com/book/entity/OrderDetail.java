@@ -38,6 +38,24 @@ public class OrderDetail implements Serializable {
 	@Column(name = "Amount", nullable = false)
 	private double amount;
 
+	
+	public OrderDetail() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
+	public OrderDetail(String id, Order order, Book book, int quantity, double price, double amount) {
+		super();
+		this.id = id;
+		this.order = order;
+		this.book = book;
+		this.quantity = quantity;
+		this.price = price;
+		this.amount = amount;
+	}
+
+
 	public String getId() {
 		return id;
 	}
