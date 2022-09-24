@@ -1,7 +1,5 @@
 package com.book.service;
 
-public interface OrderService {
-	
-	
+public class OrderService {
 
 }

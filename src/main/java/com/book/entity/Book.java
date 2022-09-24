@@ -27,6 +27,10 @@ public class Book implements Serializable {
 	@NotBlank(message = "Title is mandatory")
 	@Column(name = "title")
 	private String title;
+	
+	@NotBlank(message = "Price is mandatory")
+	@Column(name = "price")
+	private double price;
 
 	public Book() {
 		super();
