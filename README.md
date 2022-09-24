@@ -1,0 +1,81 @@
+# BookStore_API
+
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603090773', 'Any Empire' , 80000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603090698', 'August Moon', 90000 );
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781891830372', 'The Barefoot Serpent (softcover) by Scott Morse', 120000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603090292', 'BB Wolf and the 3 LP"s',70000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781891830402', 'Beach Safari by Mawil', 11000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603094429', 'Belzebubs', 100000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781891830563', 'Bighead by Jeffrey Brown', 90000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603094320', 'Bodycount', 99000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781891830198', 'Box Office Poison', 90000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9780958578349', 'From Hell', 98000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603094221', 'Cat"n"Bat', 120000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603091008', 'Crater XV', 70000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781891830815', 'Cry Yourself to Sleep by Jeremy Tinder', 90000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603092715', 'Dear Beloved Stranger', 80000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781891830129', 'Dear Julia',80000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781891830921', 'Death by Chocolate - Redux',201000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603090575', 'Dragon Puncher (Book 1)', 199000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603090858', 'Dragon Puncher (Book 2): Island', 185000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603093873', 'Eddie Campbell"s Omnibox: The Complete ALEC and BACCHUS (3 Volume Slipcase)', 195000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603090360', 'Far Arden', 155000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603090537', 'Fingerprints', 160000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781891830976', 'Fox Bunny Funny', 150000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9780958578349', 'From Hell', 140000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603093866', 'God Is Disappointed / Apocrypha Now — SLIPCASE SET', 145000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603090988', 'God Is Disappointed in You', 99000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603090087', 'Hieronymus B.', 55000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603094412', 'Highwayman', 60000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781891830174', 'Hutch Owen (Vol 1): The Collected by Tom Hart', 80000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781891830556', 'Hutch Owen (Vol 2): Unmarketable by Tom Hart', 70000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603090865', 'Hutch Owen (Vol 3): Let"s Get Furious!', 190000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781891830839', 'Infinite Kung Fu', 120000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781891830655', 'The King by Rich Koslowski', 98000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603090001', 'The League of Extraordinary Gentlemen (Vol III): Century #1 - 1910', 120000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603090063', 'The League of Extraordinary Gentlemen (Vol III): Century #2 - 1969',199000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603090070', 'The League of Extraordinary Gentlemen (Vol III): Century #3 - 2009', 200000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603094375', 'The League of Extraordinary Gentlemen (Vol III): Century', 280000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781891830518', 'Less Than Heroes by David Yurkovich', 130000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603090704', 'Liar"s Kiss', 168000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781891830693', 'Lone Racer by Nicolas Mahler', 160000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603091527', 'The Lovely Horrible Stuff', 109000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603090094', 'Lower Regions', 99000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781891830334', 'Magic Boy and the Robot Elf by James Kochalka', 79000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781891830365', 'Monkey Vs. Robot (Vol 2): Crystal of Power by Koch.', 89000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603090759', 'Monster on the Hill (Book 1)', 120000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781891830686', 'Mosquito by Dan James',120000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603090490', 'Moving Pictures', 145000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603094092', 'Nate Powell"s OMNIBOX', 134000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603090681', 'Okie Dokie Donuts (Story 1): Open for Business!', 149000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781891830297', 'Pinky & Stinky by James Kochalka', 128000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603090711', 'Pirate Penguin vs Ninja Chicken (Book 1): Troublems with Frenemies', 129000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603093675', 'Pirate Penguin vs Ninja Chicken (Book 2): Escape from Skull-Fragment Island!', 175000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603094139', 'Return of the Dapper Men (Deluxe Edition)', 180000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603090896', 'Scene But Not Heard', 89000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603094450', 'A Shining Beacon', 120000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781891830143', 'Speechless',125000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781891830501', 'Spiral-Bound by Aaron Renier', 160000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603090209', 'Sulk (Vol 1): Bighead and Friends', 87000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603090315', 'Sulk (Vol 2): Deadly Awesome', 90000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603090551', 'Sulk (Vol 3): The Kind of Strength...', 100000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781891830969', 'Super Spy', 140000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603090438', 'Super Spy (Vol 2): The Lost Dossiers', 150000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603090339', 'Swallow Me Whole', 75000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603090056', 'That Salty Air', 90000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603094504', 'They Called Us Enemy', 89000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781891830310', 'Three Fingers by Rich Koslowski', 75000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781891830983', 'Too Cool to Be Forgotten', 90000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603090742', 'The Underwater Welder', 86000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603090889', 'Upside Down (Book 1): A Vampire Tale', 130000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603093712', 'Upside Down (Book 2): A Hat Full of Spells', 50000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781891830723', 'Will You Still Love Me If I Wet the Bed by Liz Prince', 60000);
+INSERT INTO BOOKS (isbn, title, price) VALUES ('9781603094405', 'Ye', 75000);
+
+INSERT INTO USERS (email, name, password, role, username)
+VALUES ('admin@mycompany.com', 'Admin', '$2a$12$/PhUvBS1Mett5gVOe6V3hOApW/.8Fl.KCwezRZWSRYZZF93UODswO', 'ADMIN', 'admin');
+-->password=admin;
+
+INSERT INTO USERS (email, name, password, role, username)
+VALUES ('user@mycompany.com', 'User', '$2a$12$0NJKCRtX/Drz6R2tCMt6c.CXzgcGObrfx/5LIHolASAOg89JUqvGW', 'USER', 'user');
+-->password=user
