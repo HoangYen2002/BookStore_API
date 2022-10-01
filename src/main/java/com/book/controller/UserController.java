@@ -21,6 +21,7 @@ import com.book.service.UserService;
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class UserController {
 
+
 	@Autowired
 	private UserService userService;
 
@@ -56,5 +57,9 @@ public class UserController {
 		}
 		userService.deleteUser(user);
 	}
+	
+	
+	
+	
 
 }

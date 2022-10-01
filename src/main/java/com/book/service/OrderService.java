@@ -3,18 +3,18 @@ package com.book.service;
 import java.util.List;
 
 import com.book.entity.Order;
+import com.book.entity.OrderDetail;
 import com.book.model.CartInfo;
-import com.book.model.OrderDetailInfo;
-import com.book.model.OrderInfo;
+
 
 public interface OrderService {
 	
-	public void saveOrder(CartInfo cartInfo);
+	void saveOrder(CartInfo cartInfo);
 	
-	public OrderInfo getOrderInfoById(String orderId);
+	List<Order> getOrders();
 	
-	public List<OrderDetailInfo> getAllOrderDetailInfos(String orderId);
+	List<Order> getOrdersContainingText(String text);
 	
-	public Order getOrderById(String orderId);
+	List<OrderDetail> getOrderDetails(String orderId);
 
 }

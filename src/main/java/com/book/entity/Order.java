@@ -5,132 +5,145 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 @Entity
-@Table(name = "Orders")
+@Table(name = "orders")
 public class Order implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-	@Column(name = "OrderID", length = 50)
-	private String orderId;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private long id;
 	
-	@Column(name = "Order_Date", nullable = false)
+	@Column(name = "order_date", nullable = false)
 	@Temporal(TemporalType.DATE)
 	private Date orderDate;
 	
-	@Column(name = "Order_Num", nullable = false)
+	@Column(name = "Order_num", nullable = false)
 	private int orderNum;
 
-	@Column(name = "Amount", nullable = false)
+	@Column(name = "amount", nullable = false)
 	private double amount;
+	
+	@Column(name = "total_quantity", nullable = false)
+	private int totalQuantity;
 
-	@Column(name = "Customer_Name", length = 255, nullable = false)
-	private String customerName;
+	@Column(name = "name", length = 255, nullable = false)
+	private String name;
 
-	@Column(name = "Customer_Address", length = 255, nullable = false)
-	private String customerAddress;
+	@Column(name = "address", length = 255, nullable = false)
+	private String address;
 
-	@Column(name = "Customer_Email", length = 128, nullable = false)
-	private String customerEmail;
+	@Column(name = "email", length = 128, nullable = false)
+	private String email;
 
-	@Column(name = "Customer_Phone", length = 128, nullable = false)
-	private String customerPhone;
+	@Column(name = "phone", length = 128, nullable = false)
+	private String phone;
 	
 	
-	
-		
-	public Order(String orderId, Date orderDate, int orderNum, double amount, String customerName,
-			String customerAddress, String customerEmail, String customerPhone) {
-		super();
-		this.orderId = orderId;
-		this.orderDate = orderDate;
-		this.orderNum = orderNum;
-		this.amount = amount;
-		this.customerName = customerName;
-		this.customerAddress = customerAddress;
-		this.customerEmail = customerEmail;
-		this.customerPhone = customerPhone;
-	}
-
 	public Order() {
 		super();
-		// TODO Auto-generated constructor stub
-	}
-	
-	public String getOrderId() {
-		return orderId;
 	}
 
-	public void setOrderId(String orderId) {
-		this.orderId = orderId;
+
+	public long getId() {
+		return id;
 	}
+
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
 
 	public Date getOrderDate() {
 		return orderDate;
 	}
 
+
 	public void setOrderDate(Date orderDate) {
 		this.orderDate = orderDate;
 	}
+
 
 	public int getOrderNum() {
 		return orderNum;
 	}
 
+
 	public void setOrderNum(int orderNum) {
 		this.orderNum = orderNum;
 	}
+
 
 	public double getAmount() {
 		return amount;
 	}
 
+
 	public void setAmount(double amount) {
 		this.amount = amount;
 	}
 
-	public static long getSerialversionuid() {
-		return serialVersionUID;
+
+	public int getTotalQuantity() {
+		return totalQuantity;
 	}
 
+
+	public void setTotalQuantity(int totalQuantity) {
+		this.totalQuantity = totalQuantity;
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public String getAddress() {
+		return address;
+	}
+
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+
+	public String getEmail() {
+		return email;
+	}
+
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+
+	public String getPhone() {
+		return phone;
+	}
+
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
 	
-	public String getCustomerName() {
-		return customerName;
-	}
-
-	public void setCustomerName(String customerName) {
-		this.customerName = customerName;
-	}
-
-	public String getCustomerAddress() {
-		return customerAddress;
-	}
-
-	public void setCustomerAddress(String customerAddress) {
-		this.customerAddress = customerAddress;
-	}
-
-	public String getCustomerEmail() {
-		return customerEmail;
-	}
-
-	public void setCustomerEmail(String customerEmail) {
-		this.customerEmail = customerEmail;
-	}
-
-	public String getCustomerPhone() {
-		return customerPhone;
-	}
-
-	public void setCustomerPhone(String customerPhone) {
-		this.customerPhone = customerPhone;
-	}
-
+	
+	
+	
 }
 

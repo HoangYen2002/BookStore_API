@@ -22,7 +22,7 @@ public class AuthController {
 
 	@Autowired
 	private UserService userService;
-
+	
 	@Autowired
 	private PasswordEncoder passwordEncoder;
 
@@ -53,10 +53,10 @@ public class AuthController {
 		user.setEmail(userRequest.getEmail());
 		user.setPassword(passwordEncoder.encode(userRequest.getPassword()));
 		user.setRole(WebSecurityConfig.USER);
-
+		
 		userService.saveUser(user);
 
 		return user;
 	}
-
+	
 }

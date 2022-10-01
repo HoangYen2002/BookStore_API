@@ -6,33 +6,35 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.ForeignKey;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Order_Details")
+@Table(name = "order_details")
 public class OrderDetail implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@Column(name = "ID", length = 50, nullable = false)
-	private String id;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private long id;
 
 	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "ORDER_ID", nullable = false, foreignKey = @ForeignKey(name = "ORDER_DETAIL_ORD_FK"), updatable = true, insertable = true)
+	@JoinColumn(name = "order_id", nullable = false, foreignKey = @ForeignKey(name = "ORDER_DETAIL_ORD_FK"), updatable = true, insertable = true)
 	private Order order;
 
 	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "BOOK_ID", nullable = false, foreignKey = @ForeignKey(name = "ORDER_DETAIL_BOOK_FK"), updatable = true, insertable = true)
+	@JoinColumn(name = "book_id", nullable = false, foreignKey = @ForeignKey(name = "ORDER_DETAIL_BOOK_FK"), updatable = true, insertable = true)
 	private Book book;
 
-	@Column(name = "Quantity", nullable = false)
+	@Column(name = "quantity", nullable = false)
 	private int quantity;
 
-	@Column(name = "Price", nullable = false)
+	@Column(name = "price", nullable = false)
 	private double price;
 
 	@Column(name = "Amount", nullable = false)
@@ -42,25 +44,13 @@ public class OrderDetail implements Serializable {
 	public OrderDetail() {
 		// TODO Auto-generated constructor stub
 	}
-	
-	
-	
-	public OrderDetail(String id, Order order, Book book, int quantity, double price, double amount) {
-		super();
-		this.id = id;
-		this.order = order;
-		this.book = book;
-		this.quantity = quantity;
-		this.price = price;
-		this.amount = amount;
-	}
 
-
-	public String getId() {
+	
+	public long getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
