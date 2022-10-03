@@ -19,8 +19,8 @@ public class Order implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	@Column(name = "id", length = 50)
+	private String id;
 	
 	@Column(name = "order_date", nullable = false)
 	@Temporal(TemporalType.DATE)
@@ -53,12 +53,12 @@ public class Order implements Serializable {
 	}
 
 
-	public long getId() {
+	public String getId() {
 		return id;
 	}
 
 
-	public void setId(long id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 

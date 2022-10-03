@@ -8,7 +8,7 @@ import org.springframework.data.repository.query.Param;
 
 import com.book.entity.OrderDetail;
 
-public interface OrderDetailRepository extends JpaRepository<OrderDetail, Long>{
+public interface OrderDetailRepository extends JpaRepository<OrderDetail, String>{
 	@Query(value = "SELECT ord from OrderDetail ord WHERE ord.order.id = :id")
 	List<OrderDetail> findAllOrderDetailsByOrderId(@Param("id") String id);
 }

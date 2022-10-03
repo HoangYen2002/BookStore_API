@@ -9,7 +9,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Transient;
-import javax.validation.constraints.NotBlank;
 
 @Entity
 @Table(name = "books")
@@ -22,14 +21,11 @@ public class Book implements Serializable {
 	private Long id;
 
 	@Column(name = "isbn")
-	@NotBlank(message = "Isbn is mandatory")
 	private String isbn;
 
-	@NotBlank(message = "Title is mandatory")
 	@Column(name = "title")
 	private String title;
 	
-	@NotBlank(message = "Price is mandatory")
 	@Column(name = "price")
 	private double price;
 
@@ -42,13 +38,15 @@ public class Book implements Serializable {
 	public Book() {
 		super();
 	}
-
-	public Book(String isbn, String title) {
-		super();
-		this.isbn = isbn;
-		this.title = title;
+	
+	public long getId() {
+		return id;
 	}
 
+	public void setId(long id) {
+		this.id = id;
+	} 
+	
 	public String getIsbn() {
 		return isbn;
 	}

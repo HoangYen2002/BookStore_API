@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 
 import com.book.entity.Order;
 
-public interface OrderRepository extends JpaRepository<Order, Long>{
+public interface OrderRepository extends JpaRepository<Order, String>{
 
 	@Query(value = "SELECT COALESCE(MAX(ord.orderNum), 0) FROM Order ord")
 	public int getMaxOrderNum();
