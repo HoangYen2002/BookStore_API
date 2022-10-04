@@ -68,7 +68,9 @@ public class OrderServiceImpl implements OrderService {
 
 	@Override
 	public List<OrderDetail> getOrderDetails(Long orderId) {
-		return orderDetailRepository.findAllOrderDetailsByOrderId(orderId);
+		List<OrderDetail> list = orderDetailRepository.findAllOrderDetailsByOrderId(orderId);
+		System.out.println(list.toString());
+		return list;
 	}
 
 }

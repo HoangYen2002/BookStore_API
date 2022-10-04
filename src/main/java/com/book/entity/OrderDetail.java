@@ -28,11 +28,11 @@ public class OrderDetail implements Serializable {
 	private Long id;
 	
 
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "order_id", nullable = false, foreignKey = @ForeignKey(name = "ORDER_DETAIL_ORD_FK"), updatable = true, insertable = true)
 	private Order order;
 
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "book_id", nullable = false, foreignKey = @ForeignKey(name = "ORDER_DETAIL_BOOK_FK"), updatable = true, insertable = true)
 	private Book book;
 
