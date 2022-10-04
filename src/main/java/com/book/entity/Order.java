@@ -18,9 +18,13 @@ public class Order implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
+//	@Id
+//	@Column(name = "id", length = 50)
+//	private String id;
+	
 	@Id
-	@Column(name = "id", length = 50)
-	private String id;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 	
 	@Column(name = "order_date", nullable = false)
 	@Temporal(TemporalType.DATE)
@@ -53,13 +57,21 @@ public class Order implements Serializable {
 	}
 
 
-	public String getId() {
-		return id;
-	}
-
-
-	public void setId(String id) {
+//	public String getId() {
+//		return id;
+//	}
+//
+//
+//	public void setId(String id) {
+//		this.id = id;
+//	}
+	
+	public void setId(Long id) {
 		this.id = id;
+	}
+	
+	public Long getId() {
+		return id;
 	}
 
 

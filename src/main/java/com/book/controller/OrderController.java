@@ -38,7 +38,7 @@ public class OrderController {
 	}
 	
 	@GetMapping("/orders/{orderId}")
-	public List<OrderDetail> getOrderDetails(@PathVariable(value = "orderId") String orderId){
+	public List<OrderDetail> getOrderDetails(@PathVariable(value = "orderId") Long orderId){
 		List<OrderDetail> orderDetails = orderService.getOrderDetails(orderId);
 		return orderDetails;
 	}

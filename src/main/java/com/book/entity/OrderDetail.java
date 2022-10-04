@@ -19,9 +19,14 @@ public class OrderDetail implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
+//	@Id
+//	@Column(name = "id", length = 20)
+//	private String id;
+	
 	@Id
-	@Column(name = "id", length = 20)
-	private String id;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "order_id", nullable = false, foreignKey = @ForeignKey(name = "ORDER_DETAIL_ORD_FK"), updatable = true, insertable = true)
@@ -42,17 +47,25 @@ public class OrderDetail implements Serializable {
 
 	
 	public OrderDetail() {
-		// TODO Auto-generated constructor stub
+		super();
 	}
 
 	
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
+	
+	public Long getId() {
+		return id;
+	}
+	
+//	public String getId() {
+//		return id;
+//	}
+//
+//	public void setId(String id) {
+//		this.id = id;
+//	}
 
 	public Order getOrder() {
 		return order;

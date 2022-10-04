@@ -15,6 +15,6 @@ public interface OrderService {
 	
 	List<Order> getOrdersContainingText(String text);
 	
-	List<OrderDetail> getOrderDetails(String orderId);
+	List<OrderDetail> getOrderDetails(Long orderId);
 
 }

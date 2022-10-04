@@ -31,7 +31,7 @@ public class OrderServiceImpl implements OrderService {
 		int orderNum = orderRepository.getMaxOrderNum() + 1;
 
 		Order order = new Order();
-		order.setId(UUID.randomUUID().toString());
+		//order.setId(UUID.randomUUID().toString());
 		order.setOrderNum(orderNum);
 		order.setOrderDate(new Date());
 		order.setTotalQuantity(cartInfo.getTotalQuantity());
@@ -45,7 +45,7 @@ public class OrderServiceImpl implements OrderService {
 		List<Book> books = cartInfo.getBooks();
 		for (Book book : books) {
 			OrderDetail orderDetail = new OrderDetail();
-			orderDetail.setId(UUID.randomUUID().toString());
+			//orderDetail.setId(UUID.randomUUID().toString());
 			orderDetail.setOrder(order);
 			orderDetail.setPrice(book.getPrice());
 			orderDetail.setAmount(book.getAmount());
@@ -67,7 +67,7 @@ public class OrderServiceImpl implements OrderService {
 	}
 
 	@Override
-	public List<OrderDetail> getOrderDetails(String orderId) {
+	public List<OrderDetail> getOrderDetails(Long orderId) {
 		return orderDetailRepository.findAllOrderDetailsByOrderId(orderId);
 	}
 
